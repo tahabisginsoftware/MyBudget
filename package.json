@@ -18,6 +18,8 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.6",
+    "react-native-format-currency": "^0.0.3",
+    "react-native-hide-with-keyboard": "^1.2.1",
     "react-native-paper": "^5.0.0-rc.8",
     "react-native-web": "~0.18.7"
   },
