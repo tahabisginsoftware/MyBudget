@@ -8,20 +8,55 @@ import * as SplashScreen from 'expo-splash-screen';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import HideWithKeyboard from 'react-native-hide-with-keyboard';
 import { formatCurrency, getSupportedCurrencies } from "react-native-format-currency";
+import { FlatList } from 'react-native-web';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 SplashScreen.preventAutoHideAsync();
 
 function Home({navigation, route}){
-  const {expenses, title, amount} = route?.params || {};
+  const {expense, title, amount, total} = route?.params || {};
+/*  React.useEffect(()=>{
+    loadExpense();
+    console.log("loaded");
+  },[]);
+  React.useEffect(()=> {
+    saveExpense(expense);
+    console.log("saved");
+  },[expense]);
 
-  const ListExpense = ({expense}) => {
-    return(
-      <View style={styles.itemContainer}>
-        <Text style={{color: 'black',fontSize:20}}>{JSON.stringify(title)}</Text>
-        <Text style={{color: 'black',fontSize:20}}>{expense?.title}</Text>
-      </View>
+  const saveExpense = async expense =>{
+    try {
+      const stringifyToo = JSON.stringify(expense);
+      await AsyncStorage.setItem('expense', stringifyToo);
+      
+    } catch (e) {
+      // saving error
+      console.log('error while saving!');
+    }
+};
+
+  const loadExpense = async () => {
+  try{
+    const expense = await AsyncStorage.getItem("expense");
+    if(expense != null){
+      setTodos(JSON.parse(expense));
+    }
+  }catch(error){
+    console.log('error while loading!')
+  }
+};
+*/
+  const Item = ({ title, amount }) => (
+    <View style={styles.itemContainer}>
+      <Text style={styles.title}>{title}</Text>
+        <Text style={styles.amount}>{amount}</Text>
+    </View>
+  );
+  
+    const renderItem = ({ item }) => (
+      <Item title={item.expense} />
     )
-  };
+
   
   return(
     <View style={styles.container}>
@@ -31,18 +66,15 @@ function Home({navigation, route}){
       </View>
       <View style={styles.Divider}></View>
       <View style={{justifyContent:'center', alignItems:'center',paddingTop:0, flex:1}}>
-      <ScrollView 
-      showsVerticalScrollIndicator={false}
-      contentContainerStyle={{padding: 20, paddingBottom: 100}}
-      >
       <View style={styles.itemContainer}>
-        <View style={styles.dateContainer}>
         <Text style={styles.title}>{title}</Text>
-        <Text style={styles.date}>yesterday</Text>
-        </View>
         <Text style={styles.amount}>{amount}</Text>
       </View>
-      </ScrollView>
+      <FlatList
+      data={expense}
+      renderItem={renderItem}
+      keyExtractor={item => item.id}
+      />
       </View>
       <View style={styles.footer}>
       <TouchableOpacity style={styles.AddButton} onPress={()=> navigation.navigate('AddExpense')}>
@@ -55,24 +87,27 @@ function Home({navigation, route}){
 
 function AddExpense({navigation, route}){
   
-  const [expenses, setExpenses] = React.useState([]);
+  const [expense, setExpenses] = React.useState([]);
   const [title, setTitle] = React.useState("");
   const [amount, setAmount] = React.useState();
+  const [total, setTotal] = React.useState(expense.amount);
 
-  const addExpensies = () =>{
+  const addExpense = () =>{
     if(!title){
       Alert.alert('Error', "Please type a title!")
     }else if(!amount){Alert.alert('Error', "Please type an amount!")}
     else{
-    setExpenses([...expenses, navigation.navigate("MyBudget",{
-      id: Math.random(),
-      title: title,
-      amount: formatCurrency({ amount: amount, code: "EUR" }),
-    })]);
-    setTitle('');
-    setAmount();
-    }
-  };
+      const newExpense = {
+        id: Math.random(),
+        title: title,
+        amount: formatCurrency({ amount: amount, code: "EUR" }),
+      };
+      setExpenses([...expense, navigation.navigate("MyBudget",...expense, newExpense)]);
+      setTitle('');
+      setAmount();
+      console.log(amount)
+      };
+    };
   return(
     <View style={styles.container}>
       <View style={styles.header}>
@@ -105,7 +140,7 @@ function AddExpense({navigation, route}){
       </View>
       <View style={styles.footerAddEdit}>
         <HideWithKeyboard>
-      <TouchableOpacity style={styles.AddExpenseButton} onPress={addExpensies}>
+      <TouchableOpacity style={styles.AddExpenseButton} onPress={addExpense}>
         <Text style={{color:'white', fontSize:20, fontFamily:'InterRegular'}}>Add</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.CancelButton} onPress={()=> navigation.goBack()}>
@@ -149,7 +184,6 @@ function Stacks() {
 }
 
 export default function App(){
-
   const [fontsLoaded] = useFonts({
     'InterBold': require('./assets/fonts/InterBold.ttf'),
     'InterMedium': require('./assets/fonts/InterMedium.ttf'),
