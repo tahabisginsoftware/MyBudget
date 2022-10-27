@@ -7,9 +7,9 @@ https://tahabisginsoftware.com
 # Setup
 
 Clone the repository
-Via HTTPS: `git clone https://github.com/tahabisginsoftware/technews.git`
+Via HTTPS: `git clone https://github.com/tahabisginsoftware/MyBudget.git`
 
-Via SSH: `git clone git@github.com:nklmantey/technews.git`
+Via SSH: `git clone git@github.com:nklmantey/MyBudget.git`
 
 iOS & Android package installation: `npm install` / `yarn add`
 
