@@ -21,7 +21,7 @@ Alternatively, you can start both the server and the app up by: `npm run android
 
 # Project status
 
-MyBudget is not finished yet, I will make a newer version in the future. But for now I have more projects coming up, that are more advanced and have more features!
+MyBudget is not finished yet, I will make a newer, better version in the future. But for now I have more projects coming up, that are more advanced and have more features!
 
 # Download
 Download MyBudget [here!](https://drive.google.com/file/d/1idDwji0YFyaV3QgobqBLZOnt9A4dBr0t/view?usp=sharing) (for android)
