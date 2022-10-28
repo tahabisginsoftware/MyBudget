@@ -24,7 +24,7 @@ Alternatively, you can start both the server and the app up by: `npm run android
 MyBudget is not finished yet, I will make a newer version in the future. But for now I have more projects coming up, that are more advanced and have more features!
 
 # Download
-Download MyBudget [here!](https://drive.google.com/file/d/1hW_a-30vZccNOTjC7MGRn7KymofD8g5c/view?usp=sharing) (for android)
+Download MyBudget [here!](https://drive.google.com/file/d/1idDwji0YFyaV3QgobqBLZOnt9A4dBr0t/view?usp=sharing) (for android)
 
 # Screenshots
 <img align="left" alt="budget1" src="https://i.imgur.com/3TMTIIm.png" width="300"/>
