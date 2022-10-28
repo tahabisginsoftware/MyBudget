@@ -30,14 +30,5 @@ Download MyBudget [here!](https://drive.google.com/file/d/1hW_a-30vZccNOTjC7MGRn
 <img align="left" alt="budget1" src="https://i.imgur.com/3TMTIIm.png" width="300"/>
 <img align="left" alt="budget2" src="https://i.imgur.com/kupiXsV.png" width="300"/>
 <img align="center" alt="budget3" src="https://i.imgur.com/biJZYGS.png" width="300"/>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br><br><br><br><br><br>
 
 ©TahaBisginSoftware, all rights reserved.
