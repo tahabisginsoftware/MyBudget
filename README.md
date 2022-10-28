@@ -38,6 +38,6 @@ Download MyBudget [here!](https://drive.google.com/file/d/1hW_a-30vZccNOTjC7MGRn
 <br>
 <br>
 <br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 ©TahaBisginSoftware, all rights reserved.
