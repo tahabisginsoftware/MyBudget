@@ -27,8 +27,9 @@ MyBudget is not finished yet, I will make a newer version in the future. But for
 Download MyBudget [here!](https://drive.google.com/file/d/1hW_a-30vZccNOTjC7MGRn7KymofD8g5c/view?usp=sharing) (for android)
 
 # Screenshots
-<img align="left" alt="news1" src="https://i.imgur.com/E2Yi9p0.png" width="300"/>
-<img align="left" alt="news2" src="https://i.ibb.co/k4DJVgF/two-news.png" width="300"/>
+<img align="left" alt="budget1" src="https://i.imgur.com/3TMTIIm.png" width="300"/>
+<img align="left" alt="budget2" src="https://i.imgur.com/kupiXsV.png" width="300"/>
+<img align="left" alt="budget3" src="https://i.imgur.com/biJZYGS.png" width="300"/>
 <br>
 <br>
 <br>
