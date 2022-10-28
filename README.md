@@ -19,25 +19,16 @@ Run app: `npx react-native run-android` / `npx react-native run-ios`
 
 Alternatively, you can start both the server and the app up by: `npm run android` / `npm run ios`
 
-# Project Status
+# Project status
 
-MyBudget is not finished yet, I will make a newer version in the future. But for now I have more projects coming up, that are more advanced and have more features!
+MyBudget is not finished yet, I will make a newer, better version in the future. But for now I have more projects coming up, that are more advanced and have more features!
 
 # Download
-Download MyBudget [here!](https://drive.google.com/file/d/1hW_a-30vZccNOTjC7MGRn7KymofD8g5c/view?usp=sharing) (for android)
+Download MyBudget [here!](https://drive.google.com/file/d/1idDwji0YFyaV3QgobqBLZOnt9A4dBr0t/view?usp=sharing) (for android)
 
 # Screenshots
 <img align="left" alt="budget1" src="https://i.imgur.com/3TMTIIm.png" width="300"/>
 <img align="left" alt="budget2" src="https://i.imgur.com/kupiXsV.png" width="300"/>
-<img align="left" alt="budget3" src="https://i.imgur.com/biJZYGS.png" width="300"/>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img align="center" alt="budget3" src="https://i.imgur.com/biJZYGS.png" width="300"/>
 
 ©TahaBisginSoftware, all rights reserved.
