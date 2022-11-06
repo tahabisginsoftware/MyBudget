@@ -9,7 +9,7 @@ https://tahabisginsoftware.com
 Clone the repository
 Via HTTPS: `git clone https://github.com/tahabisginsoftware/MyBudget.git`
 
-Via SSH: `git clone git@github.com:nklmantey/MyBudget.git`
+Via SSH: `git clone git@github.com:tahabisginsoftware/MyBudget.git`
 
 iOS & Android package installation: `npm install` / `yarn add`
 
