@@ -1,4 +1,4 @@
-# MyBudget
+![MyBudget](https://i.imgur.com/Hm1xVjl.png "MyBudget")
 
 A budget manager made with react-native. <br>
 Made by Taha Bisgin. <br>
