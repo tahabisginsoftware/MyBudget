@@ -2,7 +2,7 @@
 
 A budget manager made with react-native. <br>
 Made by Taha Bisgin. <br>
-https://tahabisginsoftware.com
+https://tbsvsn.com
 
 # Setup
 
@@ -28,4 +28,4 @@ MyBudget is not finished yet, I will make a newer, better version in the future.
 <img align="left" alt="budget2" src="https://i.imgur.com/kupiXsV.png" width="300"/>
 <img align="center" alt="budget3" src="https://i.imgur.com/biJZYGS.png" width="300"/>
 
-©TahaBisginSoftware, all rights reserved.
+©Taha Bisgin, all rights reserved.
